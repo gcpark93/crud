@@ -1,0 +1,15 @@
+* {
+    margin : 10px 10px 20px 20px;
+    padding: 10px 10px 20px 20px;
+}
+
+.btn {
+    cursor: pointer !important;
+    border: none !important;
+    background-color: transparent !important;
+    background-color: #ff9e1e !important;
+}
+
+.btn:not(.btn-list) {
+    margin-left: 1100px !important;
+}

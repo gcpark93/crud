@@ -1,0 +1,18 @@
+<h1>박기철 World</h1>
+<table class="table">
+    <thead>
+        <th>번 호</th>
+        <th>제 목</th>
+        <th>작성일자</th>
+    </thead>
+    <tbody>
+        <% @posts.each do |post| %>
+        <tr>
+            <th><%= post.id %></th>
+            <td><a href="/posts/show/<%= post.id %>"><%= post.title %></a></td>
+            <td><%= post.created_at %></td>
+        </tr>
+        <% end %>
+    </tbody>
+</table>
+<a href="/posts/new"><button type="button" class="btn btn-primary">글쓰기</button></a>
